@@ -1,4 +1,4 @@
-## v0.1.0
+## v0.1.1
 
 ### Added (6)
 * [Entity/Sensor] Added `feeder temperature`
@@ -14,3 +14,8 @@
 * [Entity/BinarySensor] Added `solar pump works`
 * [Entity/BinarySensor] Added `lighter works`
 * [Config] Added config via GUI
+* [Entity/Sensor] Added `lower solar temperature`
+* [Entity/Sensor] Added `upper solar temperature`
+* [Entity/Sensor] Added `max water temperature`
+* [Entity/Sensor] Added `min water temperature`
+* [Entity/Sensor] Added `inside temperature`

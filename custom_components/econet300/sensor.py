@@ -111,6 +111,51 @@ SENSOR_TYPES: tuple[EconetSensorEntityDescription, ...] = (
         icon="mdi:sync",
         state_class=SensorStateClass.MEASUREMENT,
         process_val=lambda x: x
+    ),
+    EconetSensorEntityDescription(
+        key="tempLowerSolar",
+        name="Lower Solar temperature",
+        icon="mdi:thermometer",
+        native_unit_of_measurement=TEMP_CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
+        device_class=SensorDeviceClass.TEMPERATURE,
+        process_val=lambda x: round(x, 2)
+    ),
+    EconetSensorEntityDescription(
+        key="tempUpperSolar",
+        name="Upper Solar temperature",
+        icon="mdi:thermometer",
+        native_unit_of_measurement=TEMP_CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
+        device_class=SensorDeviceClass.TEMPERATURE,
+        process_val=lambda x: round(x, 2)
+    ),
+    EconetSensorEntityDescription(
+        key="mixerTemp1",
+        name="Max water temperature",
+        icon="mdi:thermometer",
+        native_unit_of_measurement=TEMP_CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
+        device_class=SensorDeviceClass.TEMPERATURE,
+        process_val=lambda x: round(x, 2)
+    ),
+    EconetSensorEntityDescription(
+        key="mixerTemp2",
+        name="Min water temperature",
+        icon="mdi:thermometer",
+        native_unit_of_measurement=TEMP_CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
+        device_class=SensorDeviceClass.TEMPERATURE,
+        process_val=lambda x: round(x, 2)
+    ),
+    EconetSensorEntityDescription(
+        key="ecoSterTemp1",
+        name="Inside temperature",
+        icon="mdi:thermometer",
+        native_unit_of_measurement=TEMP_CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
+        device_class=SensorDeviceClass.TEMPERATURE,
+        process_val=lambda x: round(x, 2)
     )
 )
 
